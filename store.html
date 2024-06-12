@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>KapeKo Menu</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <link href="img/favicon.ico" rel="icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-secondary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+
+    
+    <!-- Navbar -->
+    <div class="container-fluid bg-white sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-white navbar-light py-2 py-lg-0">
+                <a href="index.html" class="navbar-brand">
+                    
+                    <img class="img-fluid" src="img/logo2.png" alt="Logo">
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link ">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="product.html" class="nav-item nav-link">Menu</a>
+                        <a href="store.html" class="nav-item nav-link active">Products</a>
+                    
+                      
+                    </div>
+                    <div class="border-start ps-4 d-none d-lg-flex align-items-center">
+                        <input type="text" id="searchInput" class="form-control form-control-sm me-2" placeholder="Search...">
+                        <button type="button" class="btn btn-sm p-0" onclick="performSearch()"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" >
+        <div class="container text-center py-5">
+            <h1 class="display-2 text-dark mb-4 animated slideInDown">Coffee Store</h1>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="section-title text-center mx-auto wow fadeInUp" style="max-width: 500px;">
+
+
+ <!-- HOTCOFFEEE -->
+            <div id="hot-coffee1" class="m-5"></div>
+            <h1 class="display-6" id="hot-coffee">HOT COFFEE</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp">
+                    <div class="store-item position-relative text-center">
+                        <img class="img-fluid" src="images/hot spanish latte.jpg" alt="">
+                        <div class="p-4">
+                            <h4 class="mb-3">Spanish Latte</h4>
+                            <p>Sweet, creamy latte with condensed milk.</p>
+                            <h4 class="text-secondary">₱100.00</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 wow fadeInUp">
+                    <div class="store-item position-relative text-center">
+                        <img class="img-fluid" src="images/mocha.png" alt="">
+                        <div class="p-4">
+                            <h4 class="mb-3">Mocha Latte</h4>
+                            <p>Creamy steamed milk, and Mocha.</p>
+                            <h4 class="text-secondary">₱100.00</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp">
+                    <div class="store-item position-relative text-center">
+                        <img class="img-fluid" src="imgs/hotcoffee_espresso.jpg" alt="">
+                        <div class="p-4">
+                            <h4 class="mb-3">Espresso</h4>
+                            <p>Steamed milk, and chocolate syrup.</p>
+                            <h4 class="text-secondary">₱100.00</h4>
+                        </div>
+                    </div>
+                </div>
+<!-- HOTCOFFEEE -->
+
+
+
+<!-- ICECOFFEE -->
+                <div id="ice-coffee" class="m-5"></div>
+                <div class="col-lg-12" >
+                    <div class="section-title text-center mx-auto wow fadeInUp" style="max-width: 500px;">
+                        <h1 class="display-6" >ICED COFFEE</h1>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp">
+                    <div class="store-item position-relative text-center">
+                        <img class="img-fluid" src="imgs/icedcoffee_caramelmacchiato.jpg" alt="">
+                        <div class="p-4">
+                            <h4 class="mb-3">CARAMEL MACCHIATO</h4>
+                            <p> Vanilla syrup, espresso, milk, caramel drizzle.</p>
+                            <h4 class="text-secondary">₱100.00</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp">
+                    <div class="store-item position-relative text-center">
+                        <img class="img-fluid" src="imgs/icedcoffee_spanish latte.jpg" alt="">
+                        <div class="p-4">
+                            <h4 class="mb-3">SPANISH LATTE</h4>
+                            <p>Iced, creamy, sweet, with condensed milk.</p>
+                            <h4 class="text-secondary">₱100.00</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp">
+                    <div class="store-item position-relative text-center">
+                        <img class="img-fluid" src="imgs/iced coffee_hazelnutlatte.jpg" alt="">
+                        <div class="p-4">
+                            <h4 class="mb-3">HAZELNUT LATTE</h4>
+                            <p>Sweet and nutty with warm milk and a dab of whipped cream</p>
+                            <h4 class="text-secondary">₱100.00</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp">
+                    <div class="store-item position-relative text-center">
+                        <img class="img-fluid" src="imgs/iced coffee_caramellatte.jpg" alt="">
+                        <div class="p-4">
+                            <h4 class="mb-3">SALTED CARAMEL</h4>
+                            <p>Sweet and salty iced coffee.</p>
+                            <h4 class="text-secondary">₱100.00</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp">
+                    <div class="store-item position-relative text-center">
+                        <img class="img-fluid" src="imgs/iced coffee_strawberrylatte.jpg" alt="">
+                        <div class="p-4">
+                            <h4 class="mb-3">STRAWBERRY LATTE</h4>
+                            <p> Iced coffee with strawberry flavor.</p>
+                            <h4 class="text-secondary">₱100.00</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" >
+                    <div class="store-item position-relative text-center">
+                        <img class="img-fluid" src="imgs/icedcoffee_whitemochalatte.jpg" alt="">
+                        <div class="p-4">
+                            <h4 class="mb-3">WHITE MOCHA LATTE</h4>
+                            <p>Iced coffee with white chocolate syrup.</p>
+                            <h4 class="text-secondary">₱100.00</h4>
+                        </div>
+                    </div>
+                </div>
+<!-- ICECOFFEE -->
+
+<!-- NONCOFEE -->
+                <div id="non-coffee" class="m-5"></div>
+                <div class="col-lg-12">
+                    <div class="section-title text-center mx-auto wow fadeInUp" style="max-width: 500px;">
+                        <h1 class="display-6">NON-COFFEE</h1>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp">
+                    <div class="store-item position-relative text-center">
+                        <img class="img-fluid" src="imgs/non-coffee_milkystrawberry.jpg" alt="">
+                        <div class="p-4">
+                            <h4 class="mb-3">MILKY STRAWBERRY</h4>
+                            <p> Creamy strawberry milk.</p>
+                            <h4 class="text-secondary">₱100.00</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp">
+                    <div class="store-item position-relative text-center">
+                        <img class="img-fluid" src="imgs/non-coffee_strawberry matcha.jpg" alt="">
+                        <div class="p-4">
+                            <h4 class="mb-3">STRAWBERRY MATCHA</h4>
+                            <p>Strawberry and matcha blend..</p>
+                            <h4 class="text-secondary">₱100.00</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp">
+                    <div class="store-item position-relative text-center">
+                        <img class="img-fluid" src="imgs/non-coffee_chocolate float.jpg" alt="">
+                        <div class="p-4">
+                            <h4 class="mb-3">CHOCOLATE FLOAT</h4>
+                            <p> Chocolate milk with ice cream..</p>
+                            <h4 class="text-secondary">₱100.00</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp">
+                    <div class="store-item position-relative text-center">
+                        <img class="img-fluid" src="imgs/non-coffee_milkymatcha.jpg" alt="">
+                        <div class="p-4">
+                            <h4 class="mb-3">MILKY MATCHA</h4>
+                            <p>Creamy matcha milk.</p>
+                            <h4 class="text-secondary">₱100.00</h4>
+                        </div>
+                    </div>
+                </div>
+<!-- NONCOFEE -->
+
+<!-- FRAPPE -->
+                <div id="frappe" class="m-5"></div>
+                <div class="col-lg-12">
+                    <div class="section-title text-center mx-auto wow fadeInUp" style="max-width: 500px;">
+                        <!-- <p class="fs-5 fw-medium fst-italic text-secondary">Online Store</p> -->
+                        <h1 class="display-6">FRAPPE</h1>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp">
+                    <div class="store-item position-relative text-center">
+                        <img class="img-fluid" src="imgs/frappe_mangograham.jpg" alt="">
+                        <div class="p-4">
+                            <h4 class="mb-3">MANGO GRAHAM</h4>
+                            <p>Mango flavor, graham crumbs.</p>
+                            <h4 class="text-secondary">₱100.00</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp">
+                    <div class="store-item position-relative text-center">
+                        <img class="img-fluid" src="imgs/frappe_javachip.jpg" alt="">
+                        <div class="p-4">
+                            <h4 class="mb-3">JAVA CHIP</h4>
+                            <p>Coffee frappe, chocolate chips.</p>
+                            <h4 class="text-secondary">₱100.00</h4>
+                        </div>
+                    </div>
+                </div><div class="col-lg-4 col-md-6 wow fadeInUp">
+                    <div class="store-item position-relative text-center">
+                        <img class="img-fluid" src="imgs/frappe_vanillamatcha.jpg" alt="">
+                        <div class="p-4">
+                            <h4 class="mb-3">VANILLA MATCHA</h4>
+                            <p>Vanilla and matcha flavors.</p>
+                            <h4 class="text-secondary">₱100.00</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp">
+                    <div class="store-item position-relative text-center">
+                        <img class="img-fluid" src="imgs/frappe_strawberry.jpg" alt="">
+                        <div class="p-4">
+                            <h4 class="mb-3">STRAWBERRY</h4>
+                            <p>Strawberry-flavored frappe.</p>
+                            <h4 class="text-secondary">₱100.00</h4>
+                        </div>
+                    </div>
+                </div>
+<!-- FRAPPE -->
+
+<!-- CROFFLES -->
+                <div id="croffles" class="m-5"></div>
+                <div class="col-lg-12">
+                    <div class="section-title text-center mx-auto wow fadeInUp" style="max-width: 500px;">
+                        <h1 class="display-6">CROFFLES</h1>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp">
+                    <div class="store-item position-relative text-center">
+                        <img class="img-fluid" src="imgs/croffles_plain.jpg" alt="">
+                        <div class="p-4">
+                            <h4 class="mb-3">PLAIN</h4>
+                            <p>Basic croissant-waffle hybrid</p>
+                            <h4 class="text-secondary">₱100.00</h4>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp">
+                    <div class="store-item position-relative text-center">
+                        <img class="img-fluid" src="imgs/croffles_nutella.jpg" alt="">
+                        <div class="p-4">
+                            <h4 class="mb-3">NUTTELA</h4>
+                            <p>Topped with Nutella spread.</p>
+                            <h4 class="text-secondary">₱100.00</h4>
+                        </div>
+
+                    </div>
+                </div><div class="col-lg-4 col-md-6 wow fadeInUp">
+                    <div class="store-item position-relative text-center">
+                        <img class="img-fluid" src="imgs/croffles_cookiescream.jpg" alt="">
+                        <div class="p-4">
+                            <h4 class="mb-3">COOKIES AND CREAM</h4>
+                            <p>Topped with crumbled cookies.</p>
+                            <h4 class="text-secondary">₱100.00</h4>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp">
+                    <div class="store-item position-relative text-center">
+                        <img class="img-fluid" src="imgs/croffle-strawberry.jpg" alt="">
+                        <div class="p-4">
+                            <h4 class="mb-3">CREAMY STRAWBERRY</h4>
+                            <p>Topped with strawberries and cream.</p>
+                            <h4 class="text-secondary">₱100.00</h4>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" >
+                    <div class="store-item position-relative text-center">
+                        <img class="img-fluid" src="imgs/croffles_creamymatcha.jpg" alt="">
+                        <div class="p-4">
+                            <h4 class="mb-3">CREAMY MATCHA</h4>
+                            <p> Topped with creamy matcha.</p>
+                            <h4 class="text-secondary">₱100.00</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" >
+                    <div class="store-item position-relative text-center">
+                        <img class="img-fluid" src="imgs/croffles_nutellaalmond.jpg" alt="">
+                        <div class="p-4">
+                            <h4 class="mb-3">NUTELLA ALMOND</h4>
+                            <p>Topped with Nutella and almonds.</p>
+                            <h4 class="text-secondary">₱100.00</h4>
+                        </div>
+                    </div>
+                </div>
+
+<!-- CROFFLES -->
+
+<!-- ADD ONS -->
+            <div id="add-ons" class="m-5"></div>
+            <div class="col-lg-12">
+                <div class="section-title text-center mx-auto wow fadeInUp" style="max-width: 500px;">
+                    <h1 class="display-6">ADD ONS</h1>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 wow fadeInUp">
+                <div class="store-item position-relative text-center">
+                    <div class="p-4">
+                        <h4 class="mb-3">SAUCE</h4>
+                        <p>Basic honey sauce</p>
+                        <h4 class="text-secondary">₱28.00</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 wow fadeInUp">
+                <div class="store-item position-relative text-center">
+                    <div class="p-4">
+                        <h4 class="mb-3">SUGAR</h4>
+                        <p>Basic honey sauce</p>
+                        <h4 class="text-secondary">₱28.00</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 wow fadeInUp">
+                <div class="store-item position-relative text-center">
+                    <div class="p-4">
+                        <h4 class="mb-3">ESPRESSO SHOT</h4>
+                        <p>Basic honey sauce</p>
+                        <h4 class="text-secondary">₱28.00</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 wow fadeInUp" >
+                <div class="store-item position-relative text-center">
+                    <div class="p-4">
+                        <h4 class="mb-3">MILK</h4>
+                        <p>Basic honey sauce</p>
+                        <h4 class="text-secondary">₱28.00</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 wow fadeInUp" >
+                <div class="store-item position-relative text-center">
+                    <div class="p-4">
+                        <h4 class="mb-3">ALMOND MILK</h4>
+                        <p>Basic honey sauce</p>
+                        <h4 class="text-secondary">₱28.00</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 wow fadeInUp">
+                <div class="store-item position-relative text-center">
+                    <div class="p-4">
+                        <h4 class="mb-3">ICED CREAM</h4>
+                        <p>Basic honey sauce</p>
+                        <h4 class="text-secondary">₱28.00</h4>
+                    </div>
+                </div>
+            </div>
+
+<!-- ADD ONS -->
+
+
+                <div class="col-12 text-center wow fadeInUp" >
+                    <a href="" class="btn btn-secondary rounded-pill py-3 px-5">View More Products</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Store End -->
+
+
+    <!-- Footer -->
+    <div class="container-fluid bg-dark footer py-1 wow fadeIn">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-secondary mb-4">Our Office</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-secondary me-3"></i>Dasmarinas, City, Cavite
+                        <a href="https://maps.app.goo.gl/1sk6tz5rJ3EGoUD96"> - Google Map</a></p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-secondary me-3"></i>09164223314</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-secondary me-3"></i>kapeko.shop@gmail.com</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href="https://twitter.com/zaireflo18"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href="https://facebook.com/wlfrd.frnndz"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href="https://www.youtube.com/@twentytwentycoffee"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-secondary mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="#">Our Services</a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-secondary mb-4">Business Hours</h4>
+                    <p class="mb-1">Monday - Friday</p>
+                    <h6 class="text-light">09:00 am - 07:00 pm</h6>
+                    <p class="mb-1">Saturday</p>
+                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
+                    <p class="mb-1">Sunday</p>
+                    <h6 class="text-light">Closed</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Copyright -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="text-secondary" href="#">Kapeko</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    Designed By <a class="text-secondary" href="about.html">alan,bartoline,mandigma,fernandez</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <a href="#" class="btn btn-lg btn-secondary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
