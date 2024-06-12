@@ -4,7 +4,7 @@
     --light: #F5F8F2;
     --dark: #252C30;
 }
-//----------
+/*----------*/
  #modal_unique {
     position: fixed;
     bottom: 20px;
@@ -35,7 +35,7 @@
     max-width: 100%;
     height: auto;
   }
-//---------
+/*---------*/
 .back-to-top {
     position: fixed;
     display: none;
