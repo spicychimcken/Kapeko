@@ -4,7 +4,38 @@
     --light: #F5F8F2;
     --dark: #252C30;
 }
-
+//----------
+ #modal_unique {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; /* Adjust position */
+    background-color: #f4f4f400;
+    padding: 20px;
+    box-shadow: 0 0  rgba(0, 0, 0, 0);
+    z-index: 9999;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: none;
+    display: none;
+    margin-bottom: 30px;
+  }
+  .modal-content {
+    text-align: center;
+  }
+  .close {
+    background-color: #d3141400;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #ad_unique {
+    
+    max-width: 100%;
+    height: auto;
+  }
+//---------
 .back-to-top {
     position: fixed;
     display: none;
