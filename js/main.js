@@ -1,39 +1,4 @@
-//------
- // Get the modal
-        var modal = document.getElementById("modal_unique");
-      
-        // Get the image element
-        var img = document.getElementById("ad_unique");
-      
-        // Get the <span> element that closes the modal
-        var span = document.getElementById("close_unique");
-      
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-          modal.style.display = "none";
-        };
-      
-        // Show the modal initially
-        modal.style.display = "block";
-      
-        // Adjust modal size based on image size
-        function adjustModalSize() {
-          var imgWidth = img.clientWidth;
-          var imgHeight = img.clientHeight;
-          modal.style.width = imgWidth + "px";
-          modal.style.height = imgHeight + "px";
-        }
-      
-        // Call adjustModalSize() when the image is loaded
-        img.onload = function() {
-          adjustModalSize();
-        };
-      
-        // Call adjustModalSize() when the window is resized
-        window.onresize = function() {
-          adjustModalSize();
-        };
-//------
+
 (function ($) {
     "use strict";
 
